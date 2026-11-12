@@ -1,0 +1,270 @@
+export interface Achievement {
+  id: string;
+  title: string;
+  organization: string;
+  date: string;
+  category: 'hackathon' | 'certificate' | 'position';
+  description: string;
+  image?: string;
+  link?: string;
+  status?: 'completed' | 'ongoing' | 'current' | 'previous';
+  achievement?: string;
+}
+
+export const achievements: Achievement[] = [
+  // Hackathons & Competitive Builds
+  {
+    id: '1',
+    title: 'InnoFusion 2.0 — Finalist (Top 5)',
+    organization: 'University of Engineering & Management, Kolkata',
+    date: '2024',
+    category: 'hackathon',
+    description: 'Led the team in InnoFusion 2.0, a 30-hour innovation hackathon. Achieved Top 5 among many finalists. Role: Team Lead',
+  },
+  {
+    id: '2',
+    title: 'Devopia 2.0 — Finalist (Dell Partner Hackathon)',
+    organization: 'Dell Technologies',
+    date: '2024',
+    category: 'hackathon',
+    description: 'Directed the team in Devopia 2.0, a competitive hackathon in partnership with Dell Technologies. Advanced to finals judged by industry experts. Role: Team Lead',
+  },
+  {
+    id: '3',
+    title: 'Tech Adrishta 2025 — Runner-Up',
+    organization: 'College Annual Tech Fest',
+    date: '2025',
+    category: 'hackathon',
+    description: 'Led the team to secure Runner-Up position in Tech Adrishta 2025 Tech Hackathon at college\'s annual fest. Role: Team Lead',
+  },
+  {
+    id: '4',
+    title: 'World\'s Largest Hackathon by Bolt',
+    organization: 'Devpost',
+    date: '2024',
+    category: 'hackathon',
+    description: 'Participated individually in the World\'s Largest Hackathon on Devpost, engaging with a global developer community to build and submit a competitive project.',
+  },
+  {
+    id: '5',
+    title: 'Hawkhacks',
+    organization: 'Devpost',
+    date: '2024',
+    category: 'hackathon',
+    description: 'Participated individually in Hawkhacks on Devpost, building solutions under timed challenge and submitting for evaluation.',
+  },
+  {
+    id: '6',
+    title: 'InnovWar Hackathon 2025',
+    organization: 'Competitive Tech Challenge',
+    date: '2025',
+    category: 'hackathon',
+    description: 'Participated individually in InnovWar Hackathon 2025, a 24-hour competitive tech challenge focused on project ideation and prototype development.',
+  },
+  {
+    id: '7',
+    title: 'Smart India Hackathon (SIH) 2024 & 2025',
+    organization: 'Government of India',
+    date: '2024-2025',
+    category: 'hackathon',
+    description: 'As Team Lead, qualified the internal college rounds for Smart India Hackathon in both 2024 and 2025 — a prestigious nationwide innovation challenge.',
+  },
+  {
+    id: '8',
+    title: 'EnCode 2026 (IIT Guwahati) — Ongoing',
+    organization: 'UDGAM, IIT Guwahati',
+    date: '2026',
+    category: 'hackathon',
+    description: 'Currently participating in EnCode 2026, an AI-focused competitive hackathon organized by UDGAM at Indian Institute of Technology Guwahati. Role: Team Lead',
+  },
+  
+  // Positions & Leadership - Current Roles
+  {
+    id: '9',
+    title: 'AI/ML Co-Lead',
+    organization: 'Encoders (Coding Club), SMIT',
+    date: 'Present',
+    category: 'position',
+    status: 'current',
+    description: 'Co-leading a technical community focused on advanced coding, problem solving, and collaborative tech initiatives.',
+  },
+  {
+    id: '10',
+    title: 'Event Management, Aesthetics & Production Lead',
+    organization: 'CINEMATES (Acting & Cinematography Club)',
+    date: 'Present',
+    category: 'position',
+    status: 'current',
+    description: 'Responsible for directing aesthetics, production planning, and execution of creative events.',
+  },
+  {
+    id: '11',
+    title: 'Advisor to Secretary General',
+    organization: 'SMIT MUN Club',
+    date: 'Present',
+    category: 'position',
+    status: 'current',
+    description: 'Mentoring executive leadership of the Model United Nations club, enhancing debating forums and leadership activities.',
+  },
+  
+  // Positions & Leadership - Previous Roles
+  {
+    id: '12',
+    title: 'PR Lead Artist',
+    organization: 'SMIT',
+    date: 'Previous',
+    category: 'position',
+    status: 'previous',
+    description: 'Managed public relations, branding, and creative outreach initiatives.',
+  },
+  {
+    id: '13',
+    title: 'PR Co-Lead',
+    organization: 'Codhers (Coding Community, SMIT)',
+    date: 'Previous',
+    category: 'position',
+    status: 'previous',
+    description: 'Co-managed community engagement and promotions for coding events.',
+  },
+  {
+    id: '14',
+    title: 'Member',
+    organization: 'Enactus, Institution\'s Innovation Council (IIC), Innovison',
+    date: 'Previous',
+    category: 'position',
+    status: 'previous',
+    description: 'Contributed to social impact and entrepreneurship initiatives, tech workshops, and innovation challenges.',
+  },
+  {
+    id: '15',
+    title: 'Internshala Student Partner',
+    organization: 'Internshala',
+    date: 'Previous',
+    category: 'position',
+    status: 'previous',
+    description: 'Campus ambassador driving internship engagement and career development activities.',
+  },
+  
+  // Certificates & Courses - Completed
+  {
+    id: '16',
+    title: 'GFG 160 – 160 Days of Problem Solving',
+    organization: 'GeeksforGeeks',
+    date: '2024',
+    category: 'certificate',
+    status: 'completed',
+    description: 'Daily problem solving in data structures and algorithms.',
+  },
+  {
+    id: '17',
+    title: 'Full Stack Developer Bootcamp – Master Frontend to Backend',
+    organization: 'GeeksforGeeks',
+    date: '2024',
+    category: 'certificate',
+    status: 'completed',
+    description: 'Full-stack web development including frontend, backend, APIs, and database concepts.',
+  },
+  {
+    id: '18',
+    title: 'Complete TensorFlow Course',
+    organization: 'GeeksforGeeks',
+    date: '2024',
+    category: 'certificate',
+    status: 'completed',
+    description: 'Deep learning fundamentals, neural networks, and TensorFlow workflows.',
+  },
+  {
+    id: '19',
+    title: 'Free Python Course with Certificate (Updated 2025)',
+    organization: 'GeeksforGeeks',
+    date: '2025',
+    category: 'certificate',
+    status: 'completed',
+    description: 'Python programming fundamentals and scripting with certification.',
+  },
+  {
+    id: '20',
+    title: 'DevOps and AI on AWS: Upgrading Apps with Generative AI',
+    organization: 'Coursera (Amazon Web Services)',
+    date: '2024',
+    category: 'certificate',
+    status: 'completed',
+    achievement: 'Grade 100%',
+    description: 'Cloud DevOps and generative AI integration workflows.',
+  },
+  {
+    id: '21',
+    title: 'PostgreSQL Fundamentals',
+    organization: 'Coursera (Amazon Web Services)',
+    date: '2024',
+    category: 'certificate',
+    status: 'completed',
+    achievement: 'Grade 100%',
+    description: 'Relational database querying fundamentals with PostgreSQL.',
+  },
+  {
+    id: '22',
+    title: 'Deloitte Virtual Internship in Cybersecurity',
+    organization: 'Forage / Deloitte',
+    date: '2024',
+    category: 'certificate',
+    status: 'completed',
+    description: 'Completed practical cybersecurity internship simulation with Deloitte — log analysis, threat investigation, and incident response.',
+  },
+  
+  // Certificates & Courses - Currently Learning
+  {
+    id: '23',
+    title: 'Google AI Essentials',
+    organization: 'Coursera (Google)',
+    date: 'Ongoing',
+    category: 'certificate',
+    status: 'ongoing',
+    description: 'Learning AI fundamentals and applications with Google.',
+  },
+  {
+    id: '24',
+    title: 'Foundations of Cybersecurity',
+    organization: 'Coursera (Google)',
+    date: 'Ongoing',
+    category: 'certificate',
+    status: 'ongoing',
+    description: 'Exploring cybersecurity principles and practices.',
+  },
+  {
+    id: '25',
+    title: 'Generative AI for Software Development',
+    organization: 'Coursera',
+    date: 'Ongoing',
+    category: 'certificate',
+    status: 'ongoing',
+    description: 'Applying generative AI to enhance software development workflows.',
+  },
+  {
+    id: '26',
+    title: 'Introduction to DevOps',
+    organization: 'Coursera (IBM)',
+    date: 'Ongoing',
+    category: 'certificate',
+    status: 'ongoing',
+    description: 'Learning DevOps methodologies and practices.',
+  },
+  {
+    id: '27',
+    title: 'Foundations of Augmented Reality (AR)',
+    organization: 'Coursera (Meta)',
+    date: 'Ongoing',
+    category: 'certificate',
+    status: 'ongoing',
+    description: 'Exploring AR development and immersive experiences.',
+  },
+  {
+    id: '28',
+    title: 'Algorithmic Toolbox',
+    organization: 'Coursera (University of California San Diego)',
+    date: 'Ongoing',
+    category: 'certificate',
+    status: 'ongoing',
+    description: 'Mastering algorithmic problem-solving techniques.',
+  }
+];
